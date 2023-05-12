@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-12T17:31:20 IST" name="Default suite" finished-at="2023-05-12T17:32:07 IST" duration-ms="46214">
+    <groups>
+    </groups>
+    <test started-at="2023-05-12T17:31:20 IST" name="Default test" finished-at="2023-05-12T17:32:07 IST" duration-ms="46214">
+      <class name="Test.Excel">
+        <test-method signature="login(java.lang.String,int)[pri:0, instance:Test.Excel@306e95ec]" started-at="2023-05-12T17:31:20 IST" name="login" data-provider="DATA" finished-at="2023-05-12T17:32:07 IST" duration-ms="46185" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void Test.Excel.login(java.lang.String,int) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: login([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=int, declaredAnnotations=[]}])
+Arguments: [null,null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Test.Excel.login(java.lang.String,int) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: login([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=int, declaredAnnotations=[]}])
+Arguments: [null,null]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,int)[pri:0, instance:Test.Excel@306e95ec]" started-at="2023-05-12T17:31:22 IST" name="login" data-provider="DATA" finished-at="2023-05-12T17:31:41 IST" duration-ms="19527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sde123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[23455]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,int)[pri:0, instance:Test.Excel@306e95ec]" started-at="2023-05-12T17:31:41 IST" name="login" data-provider="DATA" finished-at="2023-05-12T17:31:54 IST" duration-ms="12898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32323]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,int)[pri:0, instance:Test.Excel@306e95ec]" started-at="2023-05-12T17:31:54 IST" name="login" data-provider="DATA" finished-at="2023-05-12T17:32:07 IST" duration-ms="12511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[def123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25463]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- Test.Excel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
