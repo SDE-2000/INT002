@@ -1,10 +1,11 @@
 package Test;
 import java.time.Duration;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,9 +19,10 @@ public class MouseEvent {
 	
 	@BeforeClass
 	public void openbrowser() {
-		WebDriverManager.edgedriver().setup();	
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();	
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
 	}
 
 	@Test(priority = 1)

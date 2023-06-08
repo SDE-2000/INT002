@@ -47,9 +47,12 @@ public class ExcelDataProvider {
 					data[r][c] = (int) cell.getNumericCellValue();
 					System.out.println(data[r][c]);
 					break;
+				default:
+					break;
 				}
 			}
 		}
+		w.close();
 		return data;
 	}
 }
