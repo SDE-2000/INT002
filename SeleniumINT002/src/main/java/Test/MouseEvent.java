@@ -1,6 +1,5 @@
 package Test;
 import java.time.Duration;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +18,6 @@ public class MouseEvent {
 	
 	@BeforeClass
 	public void openbrowser() {
-		
 		WebDriverManager.edgedriver().setup();	
 		driver = new EdgeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
