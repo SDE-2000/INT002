@@ -15,7 +15,7 @@ public class ExcelDataProvider {
 	@DataProvider(name = "DATA")
 	public Object[][] readData() throws Exception {
 
-		File f = new File("/home/soumya/eclipse-workspace/INT002/SeleniumINT002/DataExcel/Test.xlsx");
+		File f = new File("/home/soumya/eclipse-workspace/INT002/SeleniumINT002/DataExcel/test1.xlsx");
 		FileInputStream input = new FileInputStream(f);
 		XSSFWorkbook w = new XSSFWorkbook(input);
 		XSSFSheet s = w.getSheet("Sheet1");
