@@ -2,28 +2,52 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T21:48:51 IST" name="Default suite" finished-at="2023-06-08T21:49:32 IST" duration-ms="41084">
+  <suite started-at="2023-06-09T22:10:15 IST" name="Default suite" finished-at="2023-06-09T22:10:27 IST" duration-ms="12950">
     <groups>
     </groups>
-    <test started-at="2023-06-08T21:48:51 IST" name="Default test" finished-at="2023-06-08T21:49:32 IST" duration-ms="41084">
-      <class name="Test.MouseEvent">
-        <test-method is-config="true" signature="openbrowser()[pri:0, instance:Test.MouseEvent@316bcf94]" started-at="2023-06-08T21:48:51 IST" name="openbrowser" finished-at="2023-06-08T21:49:06 IST" duration-ms="14554" status="PASS">
+    <test started-at="2023-06-09T22:10:15 IST" name="Default test" finished-at="2023-06-09T22:10:27 IST" duration-ms="12950">
+      <class name="Test.Excel">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Test.Excel@316bcf94]" started-at="2023-06-09T22:10:15 IST" name="openBrowser" finished-at="2023-06-09T22:10:18 IST" duration-ms="3474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method signature="RightClick()[pri:1, instance:Test.MouseEvent@316bcf94]" started-at="2023-06-08T21:49:06 IST" name="RightClick" finished-at="2023-06-08T21:49:22 IST" duration-ms="15957" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:Test.Excel@316bcf94]" started-at="2023-06-09T22:10:19 IST" name="login" data-provider="DATA" finished-at="2023-06-09T22:10:24 IST" duration-ms="5635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RightClick -->
-        <test-method signature="MouseHover()[pri:2, instance:Test.MouseEvent@316bcf94]" started-at="2023-06-08T21:49:22 IST" name="MouseHover" finished-at="2023-06-08T21:49:30 IST" duration-ms="7912" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:Test.Excel@316bcf94]" started-at="2023-06-09T22:10:24 IST" name="login" data-provider="DATA" finished-at="2023-06-09T22:10:27 IST" duration-ms="3015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pqr@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pqr123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MouseHover -->
-        <test-method is-config="true" signature="exit()[pri:0, instance:Test.MouseEvent@316bcf94]" started-at="2023-06-08T21:49:30 IST" name="exit" finished-at="2023-06-08T21:49:32 IST" duration-ms="2514" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.Excel@316bcf94]" started-at="2023-06-09T22:10:27 IST" name="quitBrowser" finished-at="2023-06-09T22:10:27 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exit -->
-      </class> <!-- Test.MouseEvent -->
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- Test.Excel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

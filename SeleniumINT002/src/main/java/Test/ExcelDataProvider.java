@@ -15,36 +15,33 @@ public class ExcelDataProvider {
 	@DataProvider(name = "DATA")
 	public Object[][] readData() throws Exception {
 
-		File f = new File(
-				"C:\\Users\\Soumya\\eclipse-workspace\\SeleniumINT002\\src\\main\\resources\\dataset\\data.xlsx");
+		File f = new File("/home/soumya/eclipse-workspace/INT002/SeleniumINT002/DataExcel/Test.xlsx");
 		FileInputStream input = new FileInputStream(f);
 		XSSFWorkbook w = new XSSFWorkbook(input);
 		XSSFSheet s = w.getSheet("Sheet1");
 
 		int rowCount = s.getPhysicalNumberOfRows();
-		int colCount = s.getRow(0).getPhysicalNumberOfCells();
+		int colCount = s.getRow(0).getLastCellNum();
 
-		System.out.println(colCount);
+		Object [][] data = new Object[rowCount-1][colCount];
 
-		Object[][] data = new Object[rowCount - 1][colCount];
-
-		for (int r = 0; r < rowCount - 1; r++) {
-			XSSFRow row = s.getRow(r + 1);
-			for (int c = 0; c < colCount; c++) {
+		for(int r=0 ; r<rowCount-1 ; r++) {
+			XSSFRow row = s.getRow(r+1);
+			for(int c=0;c<colCount;c++) {
 
 				XSSFCell cell = row.getCell(c);
 
 				CellType celltype = cell.getCellType();
 
-				switch (celltype) {
+				switch(celltype) {
 
 				case STRING:
 					data[r][c] = cell.getStringCellValue();
 					System.out.println(data[r][c]);
 					break;
 
-				case NUMERIC:
-					data[r][c] = (int) cell.getNumericCellValue();
+				case NUMERIC :
+					data[r][c] = (int)cell.getNumericCellValue();
 					System.out.println(data[r][c]);
 					break;
 				default:
@@ -55,4 +52,6 @@ public class ExcelDataProvider {
 		w.close();
 		return data;
 	}
+
 }
+

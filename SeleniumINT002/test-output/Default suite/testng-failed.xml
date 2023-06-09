@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.MouseEvent">
+      <class name="Test.Excel">
         <methods>
-          <include name="MouseHover"/>
-          <include name="exit"/>
-          <include name="openbrowser"/>
+          <include name="openBrowser"/>
+          <include name="login"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- Test.MouseEvent -->
+      </class> <!-- Test.Excel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

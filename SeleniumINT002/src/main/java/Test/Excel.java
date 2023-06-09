@@ -29,14 +29,13 @@ public class Excel {
 	}
 	
 	@Test(dataProvider = "DATA",dataProviderClass = ExcelDataProvider.class)
-	public void login(String email, int pass) throws InterruptedException {
+	public void login(String email, String pass) throws InterruptedException  {
 
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
 		driver.findElement(By.name("username")).sendKeys(email);
-		driver.findElement(By.name("password")).sendKeys(String.valueOf(pass));
+		driver.findElement(By.name("password")).sendKeys(pass);
 		Thread.sleep(2000);
-
 	}
 
 }
